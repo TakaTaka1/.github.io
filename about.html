@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="master.css" type="text/css">
+    <script src="node_modules/exif-js/exif.js"></script>
+  </head>
+  <body>
+  	<div>
+    	<p id="adjustimage"><img src="images-portfolio.png" width=100%; alt="サンプル" /></p>
+    	<!-- <p id="adjustimage"><img src="images.JPG" width=100%; alt="サンプル" /></p> -->
+	</div>
+	<pre>Make and model: <span id="makeAndModel"></span></div>
+
+	<script type="text/javascript">
+		window.onload=getExif;
+		// function getExif() {
+		// 	var obj1 = document.getElementById("adjustimage");
+		// 	EXIF.getData(obj1, function(){
+		// 		var make = EXIF.getTag(this, 'Make');
+	 //      		var model = EXIF.getTag(this, "Model");
+		// 	    var makeAndModel = document.getElementById("makeAndModel");
+		// 	    makeAndModel.innerHTML = `${make} ${model}`;			
+		// 	});
+		// }
+
+		function getExif() {
+		    var img1 = document.getElementById("adjustimage");
+		    EXIF.getData(img1, function() {
+		        var make = EXIF.getTag(this, "Make");
+		        var model = EXIF.getTag(this, "Model");
+		        var makeAndModel = document.getElementById("makeAndModel");
+		        makeAndModel.innerHTML = `${make} ${model}`;
+		    });		
+
+		    // var img2 = document.getElementById("img2");
+		    // EXIF.getData(img2, function() {
+		    //     var allMetaData = EXIF.getAllTags(this);
+		    //     var allMetaDataSpan = document.getElementById("allMetaDataSpan");
+		    //     allMetaDataSpan.innerHTML = JSON.stringify(allMetaData, null, "\t");
+		    // });
+		}
+
+		// console.log(getExif);
+	</script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#adjustimage{
+	
+	
+	/*transform: rotateX(180deg);*/
+  	z-index:0;
+  	overflow: hidden;
+	opacity: 0.3;/*半透明カラーの透明度*/
+  	filter: blur(1px);/*ぼかし度*/  	
+  	/*background-color: rgb(0,163,175);/*半透明カラーの色*/	*/
+}
