@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="master.css" type="text/css">
-    <script src="node_modules/exif-js/exif.js"></script>
-  </head>
-  <body>
-  	<div>
-    	<!-- <p id="adjustimage"><img src="images-portfolio.png" width=100%; alt="サンプル" /></p> -->
-    	<p id="adjustimage"><img src="images.JPG" width=100%; alt="サンプル" /></p>
-	</div>
-	<pre>Make and model: <span id="makeAndModel"></span></div>
-
-	<script type="text/javascript">
-		window.onload=getExif;
-		// function getExif() {
-		// 	var obj1 = document.getElementById("adjustimage");
-		// 	EXIF.getData(obj1, function(){
-		// 		var make = EXIF.getTag(this, 'Make');
-	 //      		var model = EXIF.getTag(this, "Model");
-		// 	    var makeAndModel = document.getElementById("makeAndModel");
-		// 	    makeAndModel.innerHTML = `${make} ${model}`;			
-		// 	});
-		// }
-
-		function getExif() {
-		    var img1 = document.getElementById("adjustimage");
-		    EXIF.getData(img1, function() {
-		        var make = EXIF.getTag(this, "Make");
-		        var model = EXIF.getTag(this, "Model");
-		        var makeAndModel = document.getElementById("makeAndModel");
-		        makeAndModel.innerHTML = `${make} ${model}`;
-		    });		
-
-		    // var img2 = document.getElementById("img2");
-		    // EXIF.getData(img2, function() {
-		    //     var allMetaData = EXIF.getAllTags(this);
-		    //     var allMetaDataSpan = document.getElementById("allMetaDataSpan");
-		    //     allMetaDataSpan.innerHTML = JSON.stringify(allMetaData, null, "\t");
-		    // });
-		}
-
-		// console.log(getExif);
-	</script>
-  </body>
+	<head>
+	    <meta charset="utf-8" />
+	    <link rel="stylesheet" href="master.css" type="text/css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	    <script src="node_modules/exif-js/exif.js"></script>
+  	</head>
+  	<body>
+  		<header class="top-image">
+  			<div class="bkRGBA container-fluid" >
+  				<nav class="container-fluid navbar navbar-light bg-clear" >
+	  				<a class="navbar-brand" href="#" style="color:white;">Navbar w/ text</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" >
+					    <span class="navbar-toggler-icon" ></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarText" style="border:none;">
+					    <ul class="navbar-nav mr-auto" style="border:none;">
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#" style="color:white">Home <span class="sr-only">(current)</span></a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" style="color:white" href="#">Features</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" style="color:white" href="#">Pricing</a>
+					      </li>
+					    </ul>
+					    <span class="navbar-text">
+					      Navbar text with an inline element
+					    </span>
+					  </div>
+				</nav>
+				<div class="row col-xl-8" style="color:white;">
+					<h1>Hello, I'm Web Developer!!<br> This is Takao's Portfolio</h1>
+				</div>
+			</div>
+		 </header>
+  	</body>
 </html>
