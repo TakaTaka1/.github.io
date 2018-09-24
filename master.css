@@ -28,3 +28,23 @@ body {
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
+
+#main_contents section h1 {
+  margin:100px 0;
+  letter-spacing:0.2em;
+}
+
+#main_contents h1 {
+  text-align:center;
+}
+
+#main_contents .row {
+  text-align:center;
+}
+
+#skills .skill_section .skill_item span {
+  display:inline-block;
+  background-color:#f2e0e0;
+  height:10px;
+  width:10px;
+}
