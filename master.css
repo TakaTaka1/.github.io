@@ -38,7 +38,7 @@ body {
   text-align:center;
 }
 
-#main_contents .row {
+#main_contents .row #introduce{
   text-align:center;
 }
 
@@ -47,4 +47,16 @@ body {
   background-color:#f2e0e0;
   height:10px;
   width:10px;
+}
+
+#skills .skill_section .skill_item p {
+  margin-bottom: 0px;
+}
+
+.skill_item .col-xs-4 .col-md-2{
+  margin-left:20px; 
+}
+.col-xs-4 .col-md-2 div{
+  width:33.3333333%;
+  padding-left:15px;
 }
